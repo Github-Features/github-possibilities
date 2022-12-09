@@ -1,0 +1,16 @@
+name: Hello actions
+
+on: [push]
+
+jobs:
+  build:
+   runs-on: ubunto-latest
+   
+   steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello World!
+    - name: Run a multi-line script
+      run: |
+        echo Add another actions to build,
+        acho test, and deploy your project.
