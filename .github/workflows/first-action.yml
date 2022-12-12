@@ -7,16 +7,25 @@ on:
   pull_request:
     types: [closed]
 
-
+# global variable can be rferenced by all jobs
+env:
+  name: Alexis
 jobs:
   build:
    runs-on: ubuntu-latest
-   
+   env:
+    name: Ray # local variable overrides global variable
    steps:
-    - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo Hello World!
+      run: echo Hello $name!
+        
+  pull-request-only:
+   runs-on: ubuntu-latest
+   if: github.event_name === 'pull request' #conditional using the github object, which contains info of the repo
+   needs: build # dependency, such that will only run when the job it needs is done
+   steps:
     - name: Run a multi-line script
       run: |
         echo Add another actions to build,
-        echo test, and deploy your project.
+        echo hello global var: $namet.
+
