@@ -20,7 +20,7 @@ jobs:
         run: |
           echo Hello $name!
           echo Actor: ${{ github.actor }}
-          echo Cpmmitted By: ${{ github.events.commits[0].author }}
+          echo Committed By: ${{ github.events.commits[0].author }}
 
   pull-request-only:
     runs-on: ubuntu-latest
