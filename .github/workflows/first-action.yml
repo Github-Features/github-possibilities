@@ -21,7 +21,7 @@ jobs:
         
   pull-request-only:
    runs-on: ubuntu-latest
-   if: github.event_name === 'pull_request' #conditional using the github object, which contains info of the repo
+   if: github.event_name == 'pull_request' #conditional using the github object, which contains info of the repo
    needs: build # dependency, such that will only run when the job it needs is done
    steps:
     - name: Run a multi-line script
