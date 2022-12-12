@@ -1,7 +1,7 @@
 name: Hello actions
 
-on: 
-  push: 
+on:
+  push:
     branches:
       - main
   pull_request:
@@ -12,20 +12,31 @@ env:
   name: Alexis
 jobs:
   build:
-   runs-on: ubuntu-latest
-   env:
-    name: Ray # local variable overrides global variable
-   steps:
-    - name: Run a one-line script
-      run: echo Hello $name!
-        
-  pull-request-only:
-   runs-on: ubuntu-latest
-   if: github.event_name == 'pull_request' #conditional using the github object, which contains info of the repo
-   needs: build # dependency, such that will only run when the job it needs is done
-   steps:
-    - name: Run a multi-line script
-      run: |
-        echo Add another actions to build,
-        echo hello global var: $namet.
+    runs-on: ubuntu-latest
+    env:
+      name: Ray # local variable overrides global variable
+    steps:
+      - name: Run a one-line script
+        run: |
+          echo Hello $name!
+          echo Actor: ${{ github.actor }}
+          echo Cpmmitted By: ${{ github.events.commits[0].author }}
 
+  pull-request-only:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' #conditional using the github object, which contains info of the repo
+    needs: build # dependency, such that will only run when the job it needs is done
+    steps:
+      - name: Run a multi-line script
+        run: |
+          echo Add another actions to build,
+          echo hello global var: $namet.
+
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "SGITHUB_CONTEXT"
+# CONTEXT: https://docs.github.com/en/actions/learn-github-actions/contexts
+# EXPRESSIONS:
