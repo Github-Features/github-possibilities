@@ -22,6 +22,18 @@ jobs:
           echo Actor: ${{ github.actor }}
           echo Committed By: ${{ github.events.commits[0].author }}
 
+  weather:
+    runs-on: ubuntu-latest
+    env:
+      location: "28.550, -81.40"
+      lang: en
+      units: us
+      exclude: "minutely,hourly,daily,alerts,flags"
+      dark_sky_secret: ${{ secrets.dark_sky }}
+    steps:
+      - name: Current Weather
+        run: curl -s --url https://api.darksky.net/forecast/$dark_sky_secret/$location?lang=$lang&units=$units&exclude=$exclude
+
   pull-request-only:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request' #conditional using the github object, which contains info of the repo
@@ -40,3 +52,4 @@ jobs:
         run: echo "SGITHUB_CONTEXT"
 # CONTEXT: https://docs.github.com/en/actions/learn-github-actions/contexts
 # EXPRESSIONS:
+# added new lines
