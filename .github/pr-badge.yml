@@ -3,3 +3,6 @@
   color: "#0052CC"
   url: "https://jira.company.com/browse/$issuePrefix"
   when: "$issuePrefix"
+
+- message: "$payload.pull_request.user.login"
+  color: "green"
