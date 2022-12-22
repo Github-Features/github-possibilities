@@ -4,34 +4,34 @@
 
 - label: "Commits"
   message: "$commits"
-  color: "#9CFFBA"
+  color: "#958500"
 
 - label: "Files"
   message: "$changedFiles"
-  color: "#FFF09C"
+  color: "#00958C"
 
 - label: "PR #"
   message: "$prNumber"
-  color: "#D89CFF"
+  color: "#630095"
 
 # LABEL
 
 - message: "Feature"
   when: "$labels.includes('feature')"
-  color: "#9CCAFF"
+  color: "#95005C"
 
 - message: "Documentation"
   when: "$labels.includes('documentation')"
-  color: "#FF9CC1"
+  color: "#8E0095"
 
 # SIZE
 
 - label: "PR Size"
-  message: "Large"
-  color: "#FF9C9C"
-  when: "$additions > 200"
+  message: "Small"
+  color: "#00A432"
+  when: "$additions < 50"
 
 - label: "PR Size"
-  message: "Small"
-  color: "#11D301"
-  when: "$additions < 50"
+  message: "Large"
+  color: "#950000"
+  when: "$additions > 200"
