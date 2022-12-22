@@ -1,7 +1,0 @@
-- label: "Setup"
-  message: "Completed"
-  color: "green"
-
-  - label: "Hello"
-  message: "World"
-  color: "green"
