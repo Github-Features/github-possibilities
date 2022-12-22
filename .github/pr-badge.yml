@@ -5,3 +5,7 @@
   - label: "Hello"
   message: "World"
   color: "green"
+
+  - label: "Preview"
+  message: "PR $prNumber"
+  color: "blue"
