@@ -11,6 +11,7 @@
 		"popper.js": "^1.15.0"
 	},
 	"dependencies": {
+		"greatest": "^1.0.2",
 		"jquery": "^3.5.0",
 		"smallest": "^1.0.1"
 	}
