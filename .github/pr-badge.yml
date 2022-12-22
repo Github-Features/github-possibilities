@@ -3,13 +3,22 @@
   color: "green"
 
 - message: "Go yellow"
-  color: "yellow"
+  color: "pink"
 
-- message: "$payload.pull_request.user.login"
-  color: "green"
+- label: "PR Creator"
+  message: "$payload.pull_request.user.login"
+  color: "purple"
 
 - label: "JIRA"
   message: "$issuePrefix"
   color: "#0052CC"
   url: "https://jira.company.com/browse/$issuePrefix"
   when: "$issuePrefix"
+
+- label: "PR Size"
+  message: "Large"
+  color: "red"
+  when: "$additions > 200"
+
+- message: "Feature"
+  when: "$labels.includes('Feature')"
