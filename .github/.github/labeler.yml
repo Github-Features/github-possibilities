@@ -2,9 +2,6 @@
 repo:
   - "*"
 
-readme:
-  - "README.md"
-
 # Add '@domain/core' label to any change within the 'core' package
 "@domain/core":
   - package/core/*
@@ -12,7 +9,8 @@ readme:
 
 # Add 'test' label to any change to *.spec.js files within the source dir
 test:
-  - src/**/*.spec.js
+  - /**/tests/*.js
+  - /**/test/*.js
 
 # Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
 source:
