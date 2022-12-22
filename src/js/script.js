@@ -48,3 +48,5 @@ $(function() {
     } //click function
   }) //smooth scrolling
 }) // Make sure Document loaded
+
+// add to script
