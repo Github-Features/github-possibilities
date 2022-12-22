@@ -1,24 +1,29 @@
-- label: "Hello"
-  message: "World"
-  color: "green"
+# https://pullrequestbadge.com/
 
-- message: "Go yellow"
-  color: "pink"
+- label: "Commits"
+  message: "$commits"
+  color: "magenta"
 
-- label: "PR Creator"
-  message: "$payload.pull_request.user.login"
-  color: "purple"
-
-- label: "JIRA"
-  message: "$issuePrefix"
-  color: "#0052CC"
-  url: "https://jira.company.com/browse/$issuePrefix"
-  when: "$issuePrefix"
+- label: "Altered"
+  message: "$changedFiles files"
+  color: "black"
 
 - label: "PR Size"
   message: "Large"
   color: "red"
   when: "$additions > 200"
 
+- label: "PR"
+  message: "#$prNumber"
+  color: "silver"
+
+- label: "PR Size"
+  message: "Small"
+  color: "red"
+  when: "$additions < 50"
+
 - message: "Feature"
-  when: "$labels.includes('Feature')"
+  when: "$labels.includes('feature')"
+
+- message: "Documentation"
+  when: "$labels.includes('documentation')"
