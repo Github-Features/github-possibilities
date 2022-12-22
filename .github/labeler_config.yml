@@ -22,7 +22,7 @@ labels:
     files:
       - ".gitignore"
       - ".gitattributes"
-  - label: "docs"
+  - label: "documentation"
     files:
       - "wiki/.*"
       - "README.md"
