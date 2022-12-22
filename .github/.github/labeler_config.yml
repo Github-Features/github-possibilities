@@ -1,0 +1,37 @@
+labels:
+  - label: "xsmall"
+    size-below: 10
+  - label: "small"
+    size-above: 9
+    size-below: 100
+  - label: "medium"
+    size-above: 99
+    size-below: 500
+  - label: "large"
+    size-above: 499
+    size-below: 1000
+  - label: "xlarge"
+    size-above: 999
+  - label: "github"
+    files:
+      - ".github/.*"
+  - label: "idea"
+    files:
+      - ".idea/.*"
+  - label: "git"
+    files:
+      - ".gitignore"
+      - ".gitattributes"
+  - label: "docs"
+    files:
+      - "wiki/.*"
+      - "README.md"
+  - label: "jinja2"
+    files:
+      - "jinja2/.*"
+  - label: "migrations"
+    files:
+      - "migrations/.*"
+  # - label: "module3"
+  #   files:
+  #     - "module3/.*"
