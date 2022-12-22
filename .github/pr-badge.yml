@@ -1,3 +1,13 @@
+- label: "Hello"
+  message: "World"
+  color: "green"
+
+- message: "Go yellow"
+  color: "yellow"
+
+- message: "$payload.pull_request.user.login"
+  color: "green"
+
 - label: "JIRA"
   message: "$issuePrefix"
   color: "#0052CC"
