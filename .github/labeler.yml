@@ -28,7 +28,7 @@ dependencies:
   - "package.json"
 
 github:
-  - /.github/**/*
+  - .github/**/*
 
 models:
   - models/*
