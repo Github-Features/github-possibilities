@@ -18,6 +18,7 @@ test:
 
 # Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
 frontend:
+  - jinja2/*
   - jinja2/**/*
 
 migrations:
@@ -28,3 +29,7 @@ dependencies:
 
 github:
   - /.github/**/*
+
+models:
+  - models/*
+  - models/**/*
