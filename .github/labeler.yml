@@ -1,9 +1,11 @@
+# https://github.com/marketplace/actions/labeler
+
 # Add 'repo' label to any root file changes
 repo:
   - "*"
 
 docs:
-  - /**/*.md
+  - "**/*.txt"
 
 # Add '@domain/core' label to any change within the 'core' package
 "@domain/core":
@@ -22,3 +24,6 @@ source:
 frontend:
   - any: ["src/**/*.js"]
     all: ["!src/main.js"]
+
+dependencies:
+  - "package.json"
