@@ -25,3 +25,6 @@ migrations:
 
 dependencies:
   - "package.json"
+
+github:
+  - /.github/**/*
