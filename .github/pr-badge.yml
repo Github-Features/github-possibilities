@@ -6,12 +6,12 @@
   message: "$commits"
   color: "#9CFFBA"
 
-- label: "Altered"
-  message: "$changedFiles files"
+- label: "Files"
+  message: "$changedFiles"
   color: "#FFF09C"
 
-- label: "PR"
-  message: "#$prNumber"
+- label: "PR #"
+  message: "$prNumber"
   color: "#D89CFF"
 
 # LABEL
