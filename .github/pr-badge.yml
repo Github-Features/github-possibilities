@@ -36,15 +36,15 @@
 
 - label: "PR Size"
   message: "Small"
-  color: "#950000"
+  color: "#63AB00"
   when: "$additions <= 50"
 
 - label: "PR Size"
   message: "Medium"
-  color: "#950000"
+  color: "#ABA900"
   when: "$additions > 50 && $additions < 200"
 
 - label: "PR Size"
   message: "Large"
-  color: "#950000"
+  color: "#AB0000"
   when: "$additions >= 200"
