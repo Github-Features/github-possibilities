@@ -10,10 +10,6 @@
   message: "$changedFiles"
   color: "#00958C"
 
-- label: "PR #"
-  message: "$prNumber"
-  color: "#630095"
-
 - label: "Additions"
   message: "$additions"
   color: "#51AB00"
@@ -21,6 +17,11 @@
 - label: "Deletions"
   message: "$deletions"
   color: "#AB0000"
+
+- label: "PR #"
+  message: "$prNumber"
+  color: "#630095"
+  url: "$$payload.pull_request.url"
 
 # LABEL
 
