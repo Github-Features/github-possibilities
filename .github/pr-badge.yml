@@ -14,6 +14,14 @@
   message: "$prNumber"
   color: "#630095"
 
+- label: "Additions"
+  message: "$additions"
+  color: "#51AB00"
+
+- label: "Deletions"
+  message: "$deletions"
+  color: "#AB0000"
+
 # LABEL
 
 - message: "Feature"
@@ -28,10 +36,15 @@
 
 - label: "PR Size"
   message: "Small"
-  color: "#00A432"
-  when: "$additions < 50"
+  color: "#950000"
+  when: "$additions <= 50"
+
+- label: "PR Size"
+  message: "Medium"
+  color: "#950000"
+  when: "$additions > 50 && $additions < 200"
 
 - label: "PR Size"
   message: "Large"
   color: "#950000"
-  when: "$additions > 200"
+  when: "$additions >= 200"
