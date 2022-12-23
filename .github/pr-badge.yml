@@ -21,7 +21,7 @@
 - label: "PR #"
   message: "$prNumber"
   color: "#630095"
-  url: "$$payload.pull_request.url"
+  url: "$payload.pull_request.url"
 
 # LABEL
 
