@@ -8,24 +8,4 @@ change
 
 do it
 
-another one
-
-changed readme
-
-changed docs againnnnnn
-
-again
-
-change
-
-change
-
-change
-
-change
-
-changed
-
-one more time
-
-again
+cleaned up 😁
