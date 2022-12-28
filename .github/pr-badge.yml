@@ -12,7 +12,7 @@
 
 - label: "Additions"
   message: "$additions"
-  color: "#51AB00"
+  color: "#005E08"
 
 - label: "Deletions"
   message: "$deletions"
