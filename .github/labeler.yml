@@ -17,7 +17,7 @@
 "Files: Migrations":
   - migrations/**/*
 
-"Files: Dependencies"
+"Files: Dependencies":
   - "package.json"
 
 "Files: GitHub":
@@ -27,13 +27,13 @@
   - models/*
   - models/**/*
 
-"Area: Frontend":
+"Area: Frontend 🎨":
   - jinja2/*
   - jinja2/**/*
   - src/*
   - src/**/*
 
-"Area: Backend":
+"Area: Backend 💾":
   - models/*
   - models/**/*
 # comment
