@@ -26,6 +26,16 @@
 "Files: Models":
   - models/*
   - models/**/*
+
+"Area: Frontend":
+  - jinja2/*
+  - jinja2/**/*
+  - src/*
+  - src/**/*
+
+"Area: Backend":
+  - models/*
+  - models/**/*
 # comment
 
 # comment
