@@ -1,0 +1,99 @@
+{
+	"labels": [
+		{
+			"name": "Type: Feature 📽️",
+			"description": "A suggested idea for this project",
+			"color": "6DFF6D"
+		},
+		{
+			"name": "Type: Bug 🐞",
+			"description": "A problem with existing functionality",
+			"color": "FF2222"
+		},
+		{
+			"name": "Type: DevOps 🔱",
+			"description": "Setting up of DevOps processes e.g. GitHub Actions, Azure DevOps Pipelines etc",
+			"color": "1D76DB"
+		},
+		{
+			"name": "Type: Refactor 🛠️",
+			"description": "A code quality improvement e.g. Tech debt",
+			"color": "0E8A16"
+		},
+		{
+			"name": "Type: Question ❔",
+			"description": "There is a question that should be addressed before closing this item",
+			"color": "BABABA"
+		},
+		{
+			"name": "Priority: High 🔥",
+			"description": "This item must be addressed immediately",
+			"color": "BE2625"
+		},
+		{
+			"name": "Priority: Medium 🧺",
+			"description": "This item should be addressed soon",
+			"color": "B87333"
+		},
+		{
+			"name": "Priority: Low 🧊",
+			"description": "This item can be delayed",
+			"color": "61B329"
+		},
+		{
+			"name": "Area: Backend 💾",
+			"description": "Relates to backend development e.g. API, Database etc",
+			"color": "000000"
+		},
+		{
+			"name": "Area: Frontend 🎨",
+			"description": "Relates to frontend development e.g. Angular, React, XAML etc",
+			"color": "FFFFFF"
+		},
+		{
+			"name": "Files: Models",
+			"description": "Relates to model files",
+			"color": "FFA824"
+		},
+		{
+			"name": "Files: Migrations",
+			"description": "Relates to migration files",
+			"color": "FFB6C1"
+		},
+		{
+			"name": "Files: Templating",
+			"description": "Relates to template files",
+			"color": "FFBBFF"
+		},
+		{
+			"name": "Files: Translations",
+			"description": "Relates to translation files",
+			"color": "F5785A"
+		},
+		{
+			"name": "Files: Tests",
+			"description": "Relates to test files",
+			"color": "EE00EE"
+		},
+		{
+			"name": "Files: Views",
+			"description": "Relates to view files",
+			"color": "CCCCFF"
+		},
+		{
+			"name": "Files: Dependencies",
+			"description": "Relates to dependencies files",
+			"color": "EAB676"
+		},
+		{
+			"name": "Files: GitHub",
+			"description": "Relates to dependencies files",
+			"color": "EAB676"
+		},
+		{
+			"name": "Files: Docs",
+			"description": "Updating documentation (e.g. README, Wiki, Guides etc.)",
+			"color": "BABABA"
+		}
+	]
+}

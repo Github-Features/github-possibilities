@@ -1,38 +1,33 @@
+# This automatic labeling happens only at the file-level. Other labels may be added manually to better specify the nature of the PR
+
 # https://github.com/marketplace/actions/labeler
 
-# Add 'repo' label to any root file changes
-repo:
-  - "*"
-
-docs:
+"Files: Docs":
   - "**/*.md"
 
-# Add '@domain/core' label to any change within the 'core' package
-"@domain/core":
-  - package/core/*
-  - package/core/**/*
-
 # Add 'test' label to any change to *.spec.js files within the source dir
-test:
+"Files: Tests":
   - tests/**/*
 
 # Add 'frontend` label to any change to *.js files as long as the `main.js` hasn't changed
-frontend:
+"Files: Templating":
   - jinja2/*
   - jinja2/**/*
 
-migrations:
+"Files: Migrations":
   - migrations/**/*
 
-dependencies:
+"Files: Dependencies"
   - "package.json"
 
-github:
+"Files: GitHub":
   - .github/**/*
 
-models:
+"Files: Models":
   - models/*
   - models/**/*
+# comment
+
 # comment
 
 # comment
