@@ -3,8 +3,8 @@ uses: lowlighter/metrics@latest
 with:
   template: repository
   filename: metrics.repository.svg
-  token: ${{ secrets.metrics_token }}
-  user: adamsimonini
+  token: ${{ secrets.METRICS_TOKEN }}
+  user: Github-Features
   repo: github-possibilities
   plugin_lines: yes
   plugin_followup: yes
